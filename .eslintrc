@@ -16,14 +16,8 @@
   "overrides": [
     // Configuration for TypeScript files
     {
-      "files": [
-        "**/*.ts",
-        "**/*.tsx"
-      ],
-      "plugins": [
-        "@typescript-eslint",
-        "unused-imports"
-      ],
+      "files": ["**/*.ts", "**/*.tsx"],
+      "plugins": ["@typescript-eslint", "unused-imports"],
       "extends": [
         "airbnb-typescript",
         "next/core-web-vitals",
@@ -48,11 +42,7 @@
         "import/order": [
           "error",
           {
-            "groups": [
-              "builtin",
-              "external",
-              "internal"
-            ],
+            "groups": ["builtin", "external", "internal"],
             "pathGroups": [
               {
                 "pattern": "react",
@@ -60,9 +50,7 @@
                 "position": "before"
               }
             ],
-            "pathGroupsExcludedImportTypes": [
-              "react"
-            ],
+            "pathGroupsExcludedImportTypes": ["react"],
             "newlines-between": "always",
             "alphabetize": {
               "order": "asc",

@@ -13,13 +13,12 @@ module.exports = {
       '4xl': '2.25rem',
       '5xl': '3rem',
       '6xl': '4rem',
-      '7xl': '6rem'
+      '7xl': '6rem',
     },
     extend: {
       colors: {
-        
         primary: {
-          "normal": "#6246EA"
+          normal: '#6246EA',
         },
         secondary: {
           50: '#f5f3ff',

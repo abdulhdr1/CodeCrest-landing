@@ -6,7 +6,7 @@ import { Footer } from './Footer';
 import { VerticalFeatures } from './VerticalFeatures';
 
 const Base = () => (
-  <div className="antialiased max-w-7xl mx-auto">
+  <div className="mx-auto max-w-7xl antialiased">
     <Meta title={AppConfig.title} description={AppConfig.description} />
     <Header />
     <Hero />

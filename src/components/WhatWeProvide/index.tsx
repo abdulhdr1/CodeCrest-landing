@@ -4,15 +4,15 @@ import Icon from './icon.svg';
 
 export function WhatWeProvide() {
   return (
-    <div className="bg-white p-8 rounded-3xl flex flex-col">
+    <div className="flex flex-col rounded-3xl bg-white p-8">
       <div className="mb-12">
-        <h3 className={`text-[28px] text-[#6246EA] mb-4`}>WHAT WE PROVIDE</h3>
+        <h3 className={`mb-4 text-[28px] text-[#6246EA]`}>WHAT WE PROVIDE</h3>
         <p className="text-xl text-[#3F3D56]">
           We offer end-to-end application development services that cover
           everything from design, front-end and back-end development to
           pipelines, DevOps, and database configuration.
         </p>
-        <p className="text-xl text-[#3F3D56] mt-2">
+        <p className="mt-2 text-xl text-[#3F3D56]">
           Our team of experts is committed to delivering high-quality
           applications that meet your unique business needs.
         </p>

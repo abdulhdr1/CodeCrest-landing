@@ -15,14 +15,14 @@ const inter = Inter({
 });
 export default function IndexPage() {
   return (
-    <div className="antialiased  mx-auto">
+    <div className="mx-auto  antialiased">
       <Meta title={AppConfig.title} description={AppConfig.description} />
       <Header />
       <Hero />
       <div
-        className={`min-h-screen  relative bg-[#F0F2F5] flex ${inter.className} items-center`}
+        className={`relative  flex min-h-screen bg-[#F0F2F5] ${inter.className} items-center`}
       >
-        <div className="max-w-7xl mx-auto grid grid-cols-3 gap-6">
+        <div className="mx-auto grid max-w-7xl grid-cols-3 gap-6">
           <WhatWeProvide />
           <div className="col-span-2 flex flex-col gap-6">
             <CreateAndEnhanceApps />

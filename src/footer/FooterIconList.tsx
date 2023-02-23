@@ -23,7 +23,7 @@ const FooterIconList = (props: IFooterIconListProps) => (
         }
 
         .footer-icon-list :global(svg) {
-          @apply fill-current w-5 h-5;
+          @apply h-5 w-5 fill-current;
         }
       `}
     </style>

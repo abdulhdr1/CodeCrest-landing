@@ -4,16 +4,16 @@ import Icon from './icon.svg';
 
 export function CreateAndEnhanceApps() {
   return (
-    <div className="bg-white p-8  rounded-3xl flex flex-col ">
-      <h3 className={`text-[28px] text-[#6246EA] mb-4`}>
+    <div className="flex flex-col  rounded-3xl bg-white p-8 ">
+      <h3 className={`mb-4 text-[28px] text-[#6246EA]`}>
         WE CREATE AND ENHANCE END-TO-END APPLICATIONS
       </h3>
       <div className="flex">
-        <p className="text-xl mr-12 w-1/2 text-[#3F3D56]">
+        <p className="mr-12 w-1/2 text-xl text-[#3F3D56]">
           No matter if you are just starting out or looking to enhance an
           existing application, we have the skills and expertise to make it
           happen.
-          <span className="block text-[#6246EA] mt-2">
+          <span className="mt-2 block text-[#6246EA]">
             Let us help you take your business to the next level.
           </span>
         </p>

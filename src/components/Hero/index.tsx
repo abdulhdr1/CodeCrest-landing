@@ -17,7 +17,7 @@ const inter = Inter({
 
 export function Hero() {
   return (
-    <div className="max-w-7xl mx-auto relative flex min-h-screen items-center">
+    <div className="relative mx-auto flex min-h-screen max-w-7xl items-center">
       <div className="relative">
         <MouseParallax strength={0.01}>
           <FadeIn delay={1} repeat={false}>

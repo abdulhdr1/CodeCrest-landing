@@ -2,13 +2,13 @@ import { BsArrowRight } from 'react-icons/bs';
 
 export function BringYourIdeas() {
   return (
-    <div className="bg-white pl-8 pr-4 py-4 rounded-3xl flex items-center font-medium text-[28px] ">
-      <span className="text-[#4545FF] inline-block min-w-max mr-2">
+    <div className="flex items-center rounded-3xl bg-white py-4 pl-8 pr-4 text-[28px] font-medium ">
+      <span className="mr-2 inline-block min-w-max text-[#4545FF]">
         BRING YOUR IDEAS,
       </span>
-      <button className="bg-primary-normal w-full group px-4 py-3 rounded-lg text-white flex items-center">
+      <button className="group flex w-full items-center rounded-lg bg-primary-normal px-4 py-3 text-white">
         LET US TAKE CARE OF THE REST
-        <BsArrowRight className="group-hover:translate-x-4 transition-all" />
+        <BsArrowRight className="transition-all group-hover:translate-x-4" />
       </button>
     </div>
   );

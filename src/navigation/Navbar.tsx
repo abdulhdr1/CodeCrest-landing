@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Logo } from '../templates/Logo';
 
 export const Navbar = () => (
-  <div className="flex flex-wrap justify-between items-center">
+  <div className="flex flex-wrap items-center justify-between">
     <div>
       <Link href="/">
         <Logo />
