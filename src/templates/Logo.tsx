@@ -1,21 +1,9 @@
-import { AppConfig } from '../utils/AppConfig';
+import Image from 'next/image';
 
-type ILogoProps = {
-  xl?: boolean;
-};
+import LogoSvg from '../../public/assets/images/codecrest_logo.svg';
 
-const Logo = (props: ILogoProps) => {
-  const fontStyle = props.xl
-    ? 'font-semibold text-3xl'
-    : 'font-semibold text-3xl';
-
-  const companyName = AppConfig.site_name;
-  return (
-    <span className={`inline-flex items-center ${fontStyle}`}>
-      <span className="text-magenta-300">{companyName.slice(0, 4)}</span>
-      <span className="text-magenta-200">{companyName.slice(4, 9)}</span>
-    </span>
-  );
+const Logo = () => {
+  return <Image src={LogoSvg} alt={'Code Crest Logo'} />;
 };
 
 export { Logo };

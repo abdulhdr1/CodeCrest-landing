@@ -1,23 +1,18 @@
-import { ReactNode } from 'react';
-
 import Link from 'next/link';
 
-type INavbarProps = {
-  logo: ReactNode;
-  children: ReactNode;
-};
+import { Logo } from '../templates/Logo';
 
-const NavbarTwoColumns = (props: INavbarProps) => (
+export const Navbar = () => (
   <div className="flex flex-wrap justify-between items-center">
     <div>
       <Link href="/">
-        <a>{props.logo}</a>
+        <Logo />
       </Link>
     </div>
 
     <nav>
-      <ul className="navbar flex items-center text-3xl text-magenta-200 divide-x">
-        {props.children}
+      <ul className="navbar flex items-center text-3xl text-primary-normal">
+        <Link href="/">Contact Us</Link>
       </ul>
     </nav>
 
@@ -34,5 +29,3 @@ const NavbarTwoColumns = (props: INavbarProps) => (
     </style>
   </div>
 );
-
-export { NavbarTwoColumns };

@@ -1,12 +1,14 @@
+import { Header } from '../components/Header';
+import { Hero } from '../components/Hero';
 import { Meta } from '../layout/Meta';
 import { AppConfig } from '../utils/AppConfig';
 import { Footer } from './Footer';
-import { Hero } from './Hero';
 import { VerticalFeatures } from './VerticalFeatures';
 
 const Base = () => (
-  <div className="antialiased text-newColorsTest-600">
+  <div className="antialiased max-w-7xl mx-auto">
     <Meta title={AppConfig.title} description={AppConfig.description} />
+    <Header />
     <Hero />
     <VerticalFeatures />
     <Footer />

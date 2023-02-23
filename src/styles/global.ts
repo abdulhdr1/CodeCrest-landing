@@ -10,7 +10,7 @@ html {
 
 body {
   font-family: 'DM Mono', monospace;
-  background-color: #19040A;
+  background-color: #ffffff;
   color: #FFCCDA;
   overflow-x: hidden;
   letter-spacing: 4%;

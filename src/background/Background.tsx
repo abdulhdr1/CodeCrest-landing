@@ -1,37 +1,32 @@
 import { ReactNode } from 'react';
 
+import Image from 'next/image';
 import { MouseParallax, ScrollParallax } from 'react-just-parallax';
-import styled from 'styled-components';
 
+import MoutainsSvg from '../../public/assets/images/hero_mountains.svg';
 import FadeIn from '../animations/fadeIn';
 
 type IBackgroundProps = {
   children: ReactNode;
 };
 
-const MountainSVG = styled.div`
-  background-image: url('./assets/images/mountain.svg');
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: contain;
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
-`;
-
 const Background = (props: IBackgroundProps) => (
-  <>
+  <div className="h-screen overflow-hidden">
     <MouseParallax strength={0.01}>
       <ScrollParallax strength={0.15}>
         <FadeIn delay={2} repeat={false}>
-          <MountainSVG />
+          <Image
+            className="absolute right-0"
+            src={MoutainsSvg}
+            alt="mountains"
+          />
         </FadeIn>
       </ScrollParallax>
     </MouseParallax>
     <FadeIn delay={1} repeat={false}>
       {props.children}
     </FadeIn>
-  </>
+  </div>
 );
 
 export { Background };

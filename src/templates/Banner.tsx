@@ -11,9 +11,7 @@ const Banner = () => (
       subtitle="Don't let your dreams for the future."
       button={
         <Link href="/">
-          <a>
-            <Button to={'#'}>Contact Us</Button>
-          </a>
+          <Button to={'#'}>Contact Us</Button>
         </Link>
       }
     />
